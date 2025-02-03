@@ -2,8 +2,8 @@
 
 1. Börja med att utveckla en Low-Interaction Honeypot, och ifall jag får tid över så kan jag utvidga dens funktionalitet och komplexhet - till en High-Interaction HoneyPot.
    
-2. Tänkte göra blogg hemsida, som man kan koppla upp sig på och posta blogg-posts och bilder. Behöver inte vara så avancerad. 
-Men användaren skall kunna logga in och skaap ett konto samt lägga ut blogg-posts.
+2. Tänkte göra en fil överförings sida, som man kan koppla upp sig på och överföra dokument och bilder. Behöver inte vara så avancerad. 
+Men användaren skall kunna logga in och skaap ett konto samt spara sina bilder därpå.
 
 3. Förslag på svagheter jag kan implementera i web-sidan:
 - Inga hashed passwords - brute forca användarnman och lösenord.
