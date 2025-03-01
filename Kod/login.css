@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444;
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1150px;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.box {
+  width: 700px;
+  height: 850px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 40% 100%;
+}
+
+.red-box {
+  background-color: #f06666;
+}
+
+.blue-box {
+  background-color: #3674b5;
+}
+
+.whitebox {
+  width: 100%;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 70px 70px 0 0;
+}
+
+/* _____________________________________________________________*/
+
+/* _________________________Rubriker____________________________*/
+
+.text {
+  margin-top: 100px;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+h1 {
+  color: #f3f3f3;
+  font-family: "Rubik", serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+quote {
+  margin-top: 15px;
+  font-size: 17px;
+  color: #f3f3f3;
+  font-family: "Rubik", serif;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #f3f3f3;
+  font-family: "Rubik", serif;
+  font-weight: 550;
+}
+
+.docking-right {
+  margin-top: 25px;
+}
+
+.rubrik-right {
+  text-align: center;
+  font-size: 44px;
+}
+
+/* _____________________________________________________________*/
+
+/* ________________________White Box____________________________*/
+
+.grid-left {
+  display: grid;
+  align-content: center;
+}
+
+.lines {
+  margin-top: 80px;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 40px;
+  font-family: "Rubik", serif;
+  color: rgb(188, 188, 188);
+  position: absolute;
+}
+
+.username::after,
+.password::after {
+  display: inline-block;
+  content: "";
+  padding: 5px;
+  padding-bottom: 3px;
+  position: relative;
+  text-align: center;
+  color: blue;
+  background-color: #ffffff;
+  width: 350px;
+  height: 1px;
+  border-top: 1px solid #f06666;
+  top: 13px;
+  left: -75px;
+}
+
+.forgot-password {
+  transform: translate(28%, 0);
+  cursor: pointer;
+  color: #f06666;
+}
+
+.forgot-password:hover {
+  font-weight: 600;
+}
+
+.forgot-password:active {
+  color: #f06666;
+}
+
+.forgot-password::after {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 130px;
+  height: 1px;
+  border-top: solid #f06666 1px;
+  top: 20px;
+  left: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 280px;
+}
+
+.login-btn {
+  background-color: #fff;
+  color: #f06666;
+  font-family: "Rubik", serif;
+  border: solid 1px #f06666;
+  border-radius: 40px;
+  padding: 5px 45px;
+  font-size: 20px;
+}
+
+.login-btn:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-style: none;
+}
+
+.social-media-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.social-media-header p {
+  color: rgb(188, 188, 188);
+  font-size: 18px;
+  font-family: "Rubik", serif;
+}
+
+.email::after {
+  display: inline-block;
+  content: "";
+  padding: 5px;
+  padding-bottom: 3px;
+  position: relative;
+  text-align: center;
+  color: blue;
+  background-color: #ffffff;
+  width: 350px;
+  height: 1px;
+  border-top: 1px solid #3674b5;
+  top: 13px;
+  left: -40px;
+}
+
+.username-left::after {
+  display: inline-block;
+  content: "";
+  padding: 5px;
+  padding-bottom: 3px;
+  position: relative;
+  text-align: center;
+  color: blue;
+  background-color: #ffffff;
+  width: 350px;
+  height: 1px;
+  border-top: 1px solid #3674b5;
+  top: 13px;
+  left: -75px;
+}
+
+.confirm-password::after {
+  display: inline-block;
+  content: "";
+  padding: 5px;
+  padding-bottom: 3px;
+  position: relative;
+  text-align: center;
+  color: blue;
+  background-color: #ffffff;
+  width: 350px;
+  height: 1px;
+  border-top: 1px solid #3674b5;
+  top: 13px;
+  left: -135px;
+}
+
+.password-left::after {
+  display: inline-block;
+  content: "";
+  padding: 5px;
+  padding-bottom: 3px;
+  position: relative;
+  text-align: center;
+  color: blue;
+  background-color: #ffffff;
+  width: 350px;
+  height: 1px;
+  border-top: 1px solid #3674b5;
+  top: 13px;
+  left: -72px;
+}
+
+.sign-in {
+  justify-self: center;
+  margin-top: 350px;
+}
+
+.sign-in-btn {
+  background-color: #fff;
+  color: #3674b5;
+  font-family: "Rubik", serif;
+  border: solid 1px #3674b5;
+  border-radius: 40px;
+  padding: 5px 45px;
+  font-size: 20px;
+}
+
+.sign-in-btn:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-style: none;
+}
+
+.contact {
+  font-size: 15px;
+  font-family: "Rubik", serif;
+  color: #3674b5;
+  justify-self: center;
+  margin-top: 60px;
+}
+
+.contact::after {
+  display: inline;
+  content: "";
+  padding: 5px;
+  padding-bottom: 3px;
+  position: relative;
+  text-align: center;
+  color: blue;
+  background-color: #ffffff;
+  width: 45px;
+  height: 1px;
+  border-top: 2px solid #3674b5;
+  top: 22px;
+  left: -55px;
+}
+
+.contact:hover {
+  cursor: pointer;
+}
+
+.social-logos {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+img {
+  height: 50px;
+}
+
+.micr {
+  height: 98px;
+}
+
+.apple {
+  height: 60px;
+  margin-right: 10px;
+}
