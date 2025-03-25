@@ -7,7 +7,7 @@
 body {
   background-color: #444;
   font-family: sans-serif;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,33 +104,46 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: left;
-  gap: 40px;
+  gap: 20px;
   font-family: "Rubik", serif;
   color: rgb(188, 188, 188);
   position: absolute;
 }
 
-.username::after,
-.password::after {
-  display: inline-block;
-  content: "";
-  padding: 5px;
-  padding-bottom: 3px;
-  position: relative;
-  text-align: center;
-  color: blue;
-  background-color: #ffffff;
-  width: 350px;
-  height: 1px;
-  border-top: 1px solid #f06666;
-  top: 13px;
-  left: -75px;
+/* _____________________________________________________________*/
+
+/* ________________________FORM FIELD___________________________*/
+
+.login-form {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.input-username,
+.input-password {
+  display: block;
+  border-bottom-color: #f06666a7;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 320px;
+  font-size: 18px;
+  color: rgba(152, 152, 152, 0.737);
+  font-family: "Rubik", serif;
+}
+
+.input-username::placeholder {
+  color: rgba(152, 152, 152, 0.737);
 }
 
 .forgot-password {
-  transform: translate(28%, 0);
+  position: relative;
   cursor: pointer;
   color: #f06666;
+  margin-bottom: 20px;
 }
 
 .forgot-password:hover {
@@ -171,9 +184,9 @@ h3 {
 
 .login-btn:hover {
   color: white;
+  border: solid 1px black;
   background-color: black;
   cursor: pointer;
-  border-style: none;
 }
 
 .social-media-header {
@@ -188,7 +201,39 @@ h3 {
   font-family: "Rubik", serif;
 }
 
-.email::after {
+/* _____________________________________________________________*/
+
+/* ________________________FORM FIELD___________________________*/
+
+.sign-form {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.sign-username,
+.sign-email,
+.sign-password,
+.sign-confirm-password {
+  display: block;
+  border-bottom-color: #3674b5;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 320px;
+  font-size: 14px;
+  color: rgba(152, 152, 152, 0.737);
+  font-family: "Rubik", serif;
+}
+
+.sign-username::placeholder,
+.sign-email::placeholder {
+  color: rgba(152, 152, 152, 0.737);
+}
+
+/* .email::after {
   display: inline-block;
   content: "";
   padding: 5px;
@@ -202,23 +247,7 @@ h3 {
   border-top: 1px solid #3674b5;
   top: 13px;
   left: -40px;
-}
-
-.username-left::after {
-  display: inline-block;
-  content: "";
-  padding: 5px;
-  padding-bottom: 3px;
-  position: relative;
-  text-align: center;
-  color: blue;
-  background-color: #ffffff;
-  width: 350px;
-  height: 1px;
-  border-top: 1px solid #3674b5;
-  top: 13px;
-  left: -75px;
-}
+} */
 
 .confirm-password::after {
   display: inline-block;
@@ -257,7 +286,8 @@ h3 {
   margin-top: 350px;
 }
 
-.sign-in-btn {
+.sign-btn {
+  margin-top: 30px;
   background-color: #fff;
   color: #3674b5;
   font-family: "Rubik", serif;
@@ -267,11 +297,11 @@ h3 {
   font-size: 20px;
 }
 
-.sign-in-btn:hover {
+.sign-btn:hover {
   color: white;
   background-color: black;
   cursor: pointer;
-  border-style: none;
+  border: solid 1px black;
 }
 
 .contact {
