@@ -1,0 +1,173 @@
+html {
+  font-size: 80%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #7488a2;
+  max-width: 200rem;
+}
+
+/* 
+
+__________________________________________________________________
+
+Här nedan börjar koden för hela sido-panelen som fungerar lite som en navigation taskbar, där användaren kan hitta allt den letar efter - såsom profil, mappar, söka, radera filer blablabla
+
+__________________________________________________________________
+
+
+*/
+
+.changeee {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #ff4b4b;
+}
+
+/* 
+Detta är första panelen högst upp till vänster, där finns bara min burger menu - som är en ikon. 
+*/
+
+.first-square {
+  position: relative;
+  width: 8rem;
+  height: 100vh;
+  background-color: #354797;
+  border-top-right-radius: 3rem;
+  /* border-top-left-radius: 4rem; */
+}
+
+.icons {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  height: 2rem;
+  width: 2rem;
+  stroke: #fff;
+}
+
+.spaces--icon {
+  margin-top: 5rem;
+}
+
+.spaces--icon--search {
+  margin-top: 10.5rem;
+}
+
+/*
+Här är andra panelen till vänster, där profil och mapp - ikonen finns.
+*/
+
+.second-square {
+  position: absolute;
+  top: 7vh;
+  width: 8rem;
+  height: 70vh;
+  background-color: #4769a9;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3.2rem;
+}
+
+/*
+Här börjar koden för tredje panelen, där jag har 3 ikoner samt en knapp för uppladning av filer och foton. 
+*/
+
+.third-square {
+  position: absolute;
+  top: 12vh;
+  width: 8rem;
+  height: 70vh;
+  background-color: #6ea8bf;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3.2rem;
+}
+
+.btn--upload {
+  background-color: #35525d;
+  border-radius: 3rem;
+  color: #fff;
+  font-size: 1rem;
+  width: 7rem;
+  height: 2rem;
+  margin-top: 22rem;
+  border-color: #35525d;
+  position: absolute;
+  left: 0.5rem;
+  box-shadow: none;
+}
+
+.btn--upload:hover,
+.btn--upload:active {
+  cursor: pointer;
+}
+
+/*
+Här börjar fjärde panelen till vänster, där logotypen finns, samt även statistik för lagringen som används på sidan.
+*/
+
+.fourth-square {
+  position: absolute;
+  top: 25vh;
+  width: 8rem;
+  height: 56vh;
+  background-color: #35525d;
+  border-top-right-radius: 3rem;
+  border-top-left-radius: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.img--logo {
+  height: 8rem;
+  margin-top: 3rem;
+  align-self: center;
+}
+
+.lagring-staplar {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 30rem;
+}
+
+.tot-lagring {
+  background-color: #93bcf0;
+  width: 0.8rem;
+  height: 10rem;
+}
+
+.anv-lagring {
+  margin-top: 8.8rem;
+  width: 0.8rem;
+  height: 1rem;
+  background-color: #ff4b4b;
+}
+
+.lagring-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+seperator {
+  color: rgb(240, 58, 58);
+  font-weight: bold;
+}
+
+/* 
+__________________________________________________________________
+
+Ovanför är all kod för sido-panelen. Nedanför börjar koden för fil-hanteringarna och mapparna 
+
+__________________________________________________________________
+
+*/
