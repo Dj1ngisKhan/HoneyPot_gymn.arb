@@ -1,0 +1,271 @@
+
+html{
+    font-size: 62.5%
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+Color:
+    Bg: #9EC6F3
+    Login: #fff
+
+
+*/
+
+/* 
+Font-sizes:
+    Box-text: 12px
+    Heading: 34px
+    Button-text: 18px
+
+*/
+
+/* 
+Font-width:
+    Heading: 700
+    Button-text: 500
+
+*/
+
+/* 
+Spacing:
+    15px
+    30px
+    50px
+*/
+
+/* 
+Font-color:
+    Text: #333;
+    Small text: #2a2a2a;
+*/
+
+/* 
+Border-radius:
+    login-box: 1rem;
+    input-fields: 0.4rem;
+*/
+
+
+/* ---- Login page styles ---- */
+
+
+body.login{
+    background-color: #9EC6F3;
+}
+
+body.login .bg{
+    height: 100vh;
+    display: grid;
+    grid-template-rows:  10rem 1fr;
+}
+
+body.login .wrong-header{
+    justify-self: center;
+    width: 100vw;
+    background-color: #3f3f3f;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+body.login .wrong-header p{
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.boxes{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+body.login .box{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+    background-color: #fff;
+    border-radius: 1rem;
+    height: 42rem;
+    width: 40rem;
+}
+
+.before{
+    color: #2a2a2a;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    opacity: 0.8;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.usr::before{
+    content: "Username/Email";
+}
+
+.pswd::before{
+    content: "Password";
+}
+
+body.login form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+body.login form input{
+    display: flex;
+    width: 34rem;
+    height: 4rem;
+    border: rgb(74, 74, 74) solid 1px;
+    text-transform: none;
+    border-radius: 0.4rem;
+    color: #333;
+    background-color: #fff;
+    margin-top: 0.2rem;
+}
+
+body.login .before{
+    position: relative;
+}
+
+input{
+    text-align: center;
+}
+
+body.login .password-icon,
+body.login .profile-icon{
+    position: absolute;
+    top: 26px;
+    left: -14px;
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px #2a2a2a;
+    border-radius: 100%;
+    left: 300px;
+    opacity: 0.7;
+}
+
+body.login .profile-icon{
+    left: 10px;
+}
+
+
+
+
+.login-heading{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 750;
+    font-family: sans-serif;
+    color: #2a2a2a;
+}
+
+body.login .login-btn{
+    margin-top: 1.6rem;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 24rem;
+}
+
+body.login .login-btn:hover,
+body.login .login-btn:active{
+    cursor: pointer;
+    background-color: #fff;
+    color: #2a2a2a;
+}
+
+.keep-login-div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 34rem;
+}
+
+.keep-login-btn{
+    display: block;
+    border: 1px #333 solid;
+    width: 1.2rem;
+    height: 1.2rem;
+    align-self: center;
+}
+
+.keep-login-btn::after{
+    content: "Remember me";
+    display: inline-block;
+    color: #7d7e7e;
+    opacity: 0.85;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    width: 14rem;
+}
+
+.keep-login-btn:hover,
+.keep-login-btn:active{
+    cursor: pointer;
+    background-color: rgb(59, 217, 59);
+}
+
+.forgot-pswd{
+    font-size: 1.1rem;
+    color: rgb(244, 63, 63);
+    opacity: 0.7;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-bottom: 0.7rem;
+}
+
+
+.welcome-text h2{
+    font-size: 5rem;
+    color: #2a2a2a;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+
+.welcome-text p{
+    font-size: 1.2rem;
+    color: #2a2a2a;
+    font-family: sans-serif;
+    margin-top: 1.2rem;
+    width: 44rem;
+}
+
+body.login .page_links{
+    display: flex;
+    gap: 1.4rem;
+    margin-top: 3rem;
+}
+
+body.login .page_links a{
+    font-size: 1rem;
+    color: rgb(53, 53, 243);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-left: 5rem;
+}
+
+body.login .page_links .login{
+    color: rgb(79, 24, 24);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+
+}
+
